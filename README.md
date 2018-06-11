@@ -41,3 +41,5 @@ The design comps can be found in the adjacent `comps` folder in this repo. These
 - For the desktop view, the content should be inside of a channel that is 960 pixels wide and is centered on wider screen sizes.
 - You will probably find it helpful during development to give each of the boxes a different background color.
 - There are no right or wrong answers... just do your best.
+
+## Project completed by Paul Suarez
