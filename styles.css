@@ -1,0 +1,411 @@
+body {
+    background-color: whitesmoke;
+    max-width: 480px;
+    margin: 10px auto;
+
+}
+
+#mobileView {
+    padding: 25px 0px;
+    display: inline-block;
+}
+#desktopView {
+    display: none;
+}
+
+#layout {
+
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "a a"
+    "b b"
+    "c c"
+    "d d"
+    "e f"
+    "g h"
+    "i i";
+
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 75px;
+}
+
+li {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    list-style-type: none;
+    background-color: lightgray;
+    outline: 1px black solid;
+}
+
+#a {
+    grid-area: a;
+
+    height: 75px;
+    width: 480px;
+
+}
+
+#a1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#a2 {
+    visibility: hidden;
+}
+
+#b {
+    grid-area: b;
+
+    height: 150px;
+    width: 480px;
+
+}
+#b1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#b2 {
+    visibility: hidden;
+}
+
+#c {
+    grid-area: c;
+
+    height: 125px;
+    width: 480px;
+
+}
+#c1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#c2 {
+    visibility: hidden;
+}
+
+#d {
+    grid-area: d;
+
+    height: 125px;
+    width: 480px;
+
+}
+#d1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#d2 {
+    visibility: hidden;
+}
+
+#e {
+    grid-area: e;
+    
+    height: 250px;
+    width: 240px;
+
+}
+#e1 {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#e2 {
+    visibility: hidden;
+}
+
+#f {
+    grid-area: f;
+    
+    height: 250px;
+    width: 240px;
+
+}
+#f1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#f2 {
+    visibility: hidden;
+}
+
+#g {
+    grid-area: g;
+
+    height: 250px;
+    width: 240px;
+
+}
+#g1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#g2 {
+    visibility: hidden;
+}
+
+#h {
+    grid-area: h;
+
+    height: 250px;
+    width: 240px;
+
+}
+#h1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#h2 {
+    visibility: hidden;
+}
+
+#i {
+    grid-area: i;
+
+    height: 80px;
+    width: 480px;
+
+}
+#i1 {
+    text-align: center;
+    font-size: 24px;
+    visibility: visible;
+
+} 
+
+#i2 {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 960px) {
+
+    body {
+        background-color: whitesmoke;
+        max-width: 960px;
+        margin: 10px auto;
+     
+    
+    }
+    
+    #desktopView {
+        padding: 25px 0px;
+        display: inline-block;
+    }
+    #mobileView {
+        display: none;
+    }
+    
+    #layout {
+    
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        "a a a a a"
+        "b c c d d"
+        "b e f g h"
+        "b i i i i";
+    
+        grid-template-columns: 200px 190px 190px 190px 190px;
+        grid-template-rows: 100px;
+      
+    
+    
+    }
+    li {
+        display: block;
+        box-sizing: border-box;
+        padding: 20px;
+        list-style-type: none;
+        background-color: lightgray;
+        outline: 1px black solid;
+    }
+    
+    #a {
+        grid-area: a;
+        
+        height: 100px;
+        width: 960px;
+   
+    }
+
+    #a1 {
+        visibility: hidden;
+
+    } 
+    
+    #a2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #b {
+        grid-area: b;
+        
+        height: 600px;
+        width: 200px;
+    }
+    #b1 {
+        visibility: hidden;
+
+    } 
+    
+    #b2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #c {
+        grid-area: c;
+        
+        height: 200px;
+        width: 380px;
+
+    }
+    #c1 {
+        visibility: hidden;
+
+    } 
+    
+    #c2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #d {
+        grid-area: d;
+        
+        height: 200px;
+        width: 380px;
+
+    }
+    #d1 {
+        visibility: hidden;
+
+    } 
+    
+    #d2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #e {
+        grid-area: e;
+        
+        height: 250px;
+        width: 190px;
+
+    }
+    #e1 {
+        visibility: hidden;
+
+    } 
+    
+    #e2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #f {
+        grid-area: f;
+        
+        height: 250px;
+        width: 190px;
+
+    }
+    #f1 {
+        visibility: hidden;
+
+    } 
+    
+    #f2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #g {
+        grid-area: g;
+
+        height: 250px;
+        width: 190px;
+
+    }
+    #g1 {
+        visibility: hidden;
+
+    } 
+    
+    #g2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #h {
+        grid-area: h;
+ 
+        height: 250px;
+        width: 190px;
+
+    }
+    #h1 {
+        visibility: hidden;
+
+    } 
+    
+    #h2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+    
+    #i {
+        grid-area: i;
+
+        height: 150px;
+        width: 760px;
+
+    }
+    #i1 {
+        visibility: hidden;
+
+    } 
+    
+    #i2 {
+        text-align: center;
+        font-size: 24px;
+        visibility: visible;
+    }
+
+}
